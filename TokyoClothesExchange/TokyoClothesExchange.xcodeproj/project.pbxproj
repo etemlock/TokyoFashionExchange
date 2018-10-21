@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		540F9A08217C404200C483AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A07217C404200C483AA /* AppDelegate.swift */; };
+		540F9A0A217C404200C483AA /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A09217C404200C483AA /* LoginRegisterViewController.swift */; };
+		540F9A0D217C404200C483AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540F9A0B217C404200C483AA /* Main.storyboard */; };
+		540F9A10217C404200C483AA /* TokyoClothesExchange.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A0E217C404200C483AA /* TokyoClothesExchange.xcdatamodeld */; };
+		540F9A12217C404200C483AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540F9A11217C404200C483AA /* Assets.xcassets */; };
+		540F9A15217C404200C483AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540F9A13217C404200C483AA /* LaunchScreen.storyboard */; };
+		540F9A20217C404300C483AA /* TokyoClothesExchangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A1F217C404300C483AA /* TokyoClothesExchangeUITests.swift */; };
+		540F9A2F217C4F4E00C483AA /* formTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A2E217C4F4E00C483AA /* formTableViewCell.swift */; };
+		540F9A31217C5F2700C483AA /* delegateMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A30217C5F2700C483AA /* delegateMethods.swift */; };
+		540F9A34217C7F2000C483AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A33217C7F2000C483AA /* Extensions.swift */; };
+		540F9A36217CA92D00C483AA /* addPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A35217CA92D00C483AA /* addPreferencesViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		540F9A1C217C404300C483AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 540F99FC217C404200C483AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540F9A03217C404200C483AA;
+			remoteInfo = TokyoClothesExchange;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		540F9A04217C404200C483AA /* TokyoClothesExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokyoClothesExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		540F9A07217C404200C483AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		540F9A09217C404200C483AA /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewController.swift; sourceTree = "<group>"; };
+		540F9A0C217C404200C483AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		540F9A0F217C404200C483AA /* TokyoClothesExchange.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TokyoClothesExchange.xcdatamodel; sourceTree = "<group>"; };
+		540F9A11217C404200C483AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		540F9A14217C404200C483AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		540F9A16217C404200C483AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540F9A1B217C404300C483AA /* TokyoClothesExchangeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokyoClothesExchangeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		540F9A1F217C404300C483AA /* TokyoClothesExchangeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokyoClothesExchangeUITests.swift; sourceTree = "<group>"; };
+		540F9A21217C404300C483AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540F9A2E217C4F4E00C483AA /* formTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = formTableViewCell.swift; sourceTree = "<group>"; };
+		540F9A30217C5F2700C483AA /* delegateMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delegateMethods.swift; sourceTree = "<group>"; };
+		540F9A33217C7F2000C483AA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		540F9A35217CA92D00C483AA /* addPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addPreferencesViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		540F9A01217C404200C483AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540F9A18217C404300C483AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		540F99FB217C404200C483AA = {
+			isa = PBXGroup;
+			children = (
+				540F9A06217C404200C483AA /* TokyoClothesExchange */,
+				540F9A1E217C404300C483AA /* TokyoClothesExchangeUITests */,
+				540F9A05217C404200C483AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		540F9A05217C404200C483AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				540F9A04217C404200C483AA /* TokyoClothesExchange.app */,
+				540F9A1B217C404300C483AA /* TokyoClothesExchangeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		540F9A06217C404200C483AA /* TokyoClothesExchange */ = {
+			isa = PBXGroup;
+			children = (
+				540F9A2B217C45BA00C483AA /* LoginAndRegistration */,
+				540F9A07217C404200C483AA /* AppDelegate.swift */,
+				540F9A30217C5F2700C483AA /* delegateMethods.swift */,
+				540F9A0B217C404200C483AA /* Main.storyboard */,
+				540F9A11217C404200C483AA /* Assets.xcassets */,
+				540F9A13217C404200C483AA /* LaunchScreen.storyboard */,
+				540F9A16217C404200C483AA /* Info.plist */,
+				540F9A0E217C404200C483AA /* TokyoClothesExchange.xcdatamodeld */,
+				540F9A33217C7F2000C483AA /* Extensions.swift */,
+			);
+			path = TokyoClothesExchange;
+			sourceTree = "<group>";
+		};
+		540F9A1E217C404300C483AA /* TokyoClothesExchangeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				540F9A1F217C404300C483AA /* TokyoClothesExchangeUITests.swift */,
+				540F9A21217C404300C483AA /* Info.plist */,
+			);
+			path = TokyoClothesExchangeUITests;
+			sourceTree = "<group>";
+		};
+		540F9A2B217C45BA00C483AA /* LoginAndRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				540F9A09217C404200C483AA /* LoginRegisterViewController.swift */,
+				540F9A2E217C4F4E00C483AA /* formTableViewCell.swift */,
+				540F9A35217CA92D00C483AA /* addPreferencesViewController.swift */,
+			);
+			name = LoginAndRegistration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		540F9A03217C404200C483AA /* TokyoClothesExchange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540F9A24217C404300C483AA /* Build configuration list for PBXNativeTarget "TokyoClothesExchange" */;
+			buildPhases = (
+				540F9A00217C404200C483AA /* Sources */,
+				540F9A01217C404200C483AA /* Frameworks */,
+				540F9A02217C404200C483AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TokyoClothesExchange;
+			productName = TokyoClothesExchange;
+			productReference = 540F9A04217C404200C483AA /* TokyoClothesExchange.app */;
+			productType = "com.apple.product-type.application";
+		};
+		540F9A1A217C404300C483AA /* TokyoClothesExchangeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540F9A27217C404300C483AA /* Build configuration list for PBXNativeTarget "TokyoClothesExchangeUITests" */;
+			buildPhases = (
+				540F9A17217C404300C483AA /* Sources */,
+				540F9A18217C404300C483AA /* Frameworks */,
+				540F9A19217C404300C483AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				540F9A1D217C404300C483AA /* PBXTargetDependency */,
+			);
+			name = TokyoClothesExchangeUITests;
+			productName = TokyoClothesExchangeUITests;
+			productReference = 540F9A1B217C404300C483AA /* TokyoClothesExchangeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		540F99FC217C404200C483AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Team Messi";
+				TargetAttributes = {
+					540F9A03217C404200C483AA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					540F9A1A217C404300C483AA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 540F9A03217C404200C483AA;
+					};
+				};
+			};
+			buildConfigurationList = 540F99FF217C404200C483AA /* Build configuration list for PBXProject "TokyoClothesExchange" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 540F99FB217C404200C483AA;
+			productRefGroup = 540F9A05217C404200C483AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				540F9A03217C404200C483AA /* TokyoClothesExchange */,
+				540F9A1A217C404300C483AA /* TokyoClothesExchangeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		540F9A02217C404200C483AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540F9A15217C404200C483AA /* LaunchScreen.storyboard in Resources */,
+				540F9A12217C404200C483AA /* Assets.xcassets in Resources */,
+				540F9A0D217C404200C483AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540F9A19217C404300C483AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		540F9A00217C404200C483AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540F9A36217CA92D00C483AA /* addPreferencesViewController.swift in Sources */,
+				540F9A10217C404200C483AA /* TokyoClothesExchange.xcdatamodeld in Sources */,
+				540F9A34217C7F2000C483AA /* Extensions.swift in Sources */,
+				540F9A2F217C4F4E00C483AA /* formTableViewCell.swift in Sources */,
+				540F9A0A217C404200C483AA /* LoginRegisterViewController.swift in Sources */,
+				540F9A31217C5F2700C483AA /* delegateMethods.swift in Sources */,
+				540F9A08217C404200C483AA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540F9A17217C404300C483AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540F9A20217C404300C483AA /* TokyoClothesExchangeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		540F9A1D217C404300C483AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 540F9A03217C404200C483AA /* TokyoClothesExchange */;
+			targetProxy = 540F9A1C217C404300C483AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		540F9A0B217C404200C483AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540F9A0C217C404200C483AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		540F9A13217C404200C483AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540F9A14217C404200C483AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		540F9A22217C404300C483AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		540F9A23217C404300C483AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		540F9A25217C404300C483AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3ZCB692HH2;
+				INFOPLIST_FILE = TokyoClothesExchange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = p.TokyoClothesExchange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		540F9A26217C404300C483AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3ZCB692HH2;
+				INFOPLIST_FILE = TokyoClothesExchange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = p.TokyoClothesExchange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		540F9A28217C404300C483AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TokyoClothesExchangeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = p.TokyoClothesExchangeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TokyoClothesExchange;
+			};
+			name = Debug;
+		};
+		540F9A29217C404300C483AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TokyoClothesExchangeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = p.TokyoClothesExchangeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TokyoClothesExchange;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		540F99FF217C404200C483AA /* Build configuration list for PBXProject "TokyoClothesExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540F9A22217C404300C483AA /* Debug */,
+				540F9A23217C404300C483AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540F9A24217C404300C483AA /* Build configuration list for PBXNativeTarget "TokyoClothesExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540F9A25217C404300C483AA /* Debug */,
+				540F9A26217C404300C483AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		540F9A27217C404300C483AA /* Build configuration list for PBXNativeTarget "TokyoClothesExchangeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540F9A28217C404300C483AA /* Debug */,
+				540F9A29217C404300C483AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		540F9A0E217C404200C483AA /* TokyoClothesExchange.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				540F9A0F217C404200C483AA /* TokyoClothesExchange.xcdatamodel */,
+			);
+			currentVersion = 540F9A0F217C404200C483AA /* TokyoClothesExchange.xcdatamodel */;
+			path = TokyoClothesExchange.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 540F99FC217C404200C483AA /* Project object */;
+}
