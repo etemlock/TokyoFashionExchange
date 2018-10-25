@@ -21,11 +21,12 @@ class LoginRegisterViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet var formTableView: UITableView!
     private var segmentIndexFlag = 0
     private var loginPlaceHolders = ["ユーザネーム","パースワード"]
-    private var registerPlaceHolders = ["名","住所","年","パスワード","パスワード確認"]
+    private var registerPlaceHolders = ["ユーザネーム","住所","年","メールアド","パスワード","パスワード確認"]
     
     
     /**** data *****/
     private var cellId = "formTableCell"
+    var regSegue = "continueRegistrationSegue"
     private var loginInputs = loginInputWrapper()
     private var registerInputs = registerInputWrapper()
     
@@ -71,7 +72,7 @@ class LoginRegisterViewController: UIViewController, UITableViewDelegate, UITabl
         if segmentIndexFlag == 0 {
             return 2
         } else {
-            return 5
+            return 6
         }
     }
     
@@ -126,11 +127,11 @@ class LoginRegisterViewController: UIViewController, UITableViewDelegate, UITabl
     @IBAction func selectGender(_ sender: UISegmentedControl) {
         switch  sender.selectedSegmentIndex {
         case 0:
-            registerInputs.setInput(input: "女", pos: 5)
+            registerInputs.setInput(input: "女", pos: 6)
         case 1:
-            registerInputs.setInput(input: "男", pos: 5)
+            registerInputs.setInput(input: "男", pos: 6)
         default:
-            registerInputs.setInput(input: "女", pos: 5)
+            registerInputs.setInput(input: "女", pos: 6)
         }
     }
     
@@ -150,17 +151,26 @@ class LoginRegisterViewController: UIViewController, UITableViewDelegate, UITabl
     /************************************ button actions **************************************/
     
     @IBAction func registerClick(_ sender: Any) {
-        for i in 0...5 {
+        for i in 0...6 {
             if registerInputs.getInput(pos: i) == "" {
                 promptAlertWithDelay("インプット足りない", inmessage: "インプット全部入れてください", indelay: 5.0)
                 return
             }
         }
-        performSegue(withIdentifier: "continueRegistrationSegue", sender: self)
+        if registerInputs.getPasswd() != registerInputs.getPasswdCfrm() {
+            promptAlertWithDelay("パスワードが合いません", inmessage: "パスワードが合いません", indelay: 5.0)
+            return
+        }
+        performSegue(withIdentifier: regSegue, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         navigationItem.backBarButtonItem?.title = "< Back"
+        if let nextView = segue.destination as? addPreferencesViewController {
+            if segue.identifier == regSegue {
+                nextView.setPrevPageInputs(registerParams: registerInputs)
+            }
+        }
     }
 
 }
@@ -183,19 +193,27 @@ class loginInputWrapper {
 }
 
 class registerInputWrapper {
-    private var registerInputs : [String] = ["","","","","","女"]
+    private var registerInputs : [String] = ["","","","","","","女"]
     
     func setInput(input: String, pos: Int){
-        if 0...5 ~= pos {
+        if 0...6 ~= pos {
             registerInputs[pos] = input
         }
     }
     
     func getInput(pos: Int) -> String {
-        if 0...5 ~= pos {
+        if 0...6 ~= pos {
             return registerInputs[pos]
         }
         return ""
+    }
+    
+    func getPasswd() -> String {
+        return registerInputs[4]
+    }
+    
+    func getPasswdCfrm() -> String {
+        return registerInputs[5]
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		481DB9551064F74156B692A0 /* Pods_TokyoClothesExchangeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8854FBA0436170849A83D945 /* Pods_TokyoClothesExchangeUITests.framework */; };
 		540F9A08217C404200C483AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A07217C404200C483AA /* AppDelegate.swift */; };
 		540F9A0A217C404200C483AA /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A09217C404200C483AA /* LoginRegisterViewController.swift */; };
 		540F9A0D217C404200C483AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540F9A0B217C404200C483AA /* Main.storyboard */; };
@@ -18,6 +19,10 @@
 		540F9A31217C5F2700C483AA /* delegateMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A30217C5F2700C483AA /* delegateMethods.swift */; };
 		540F9A34217C7F2000C483AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A33217C7F2000C483AA /* Extensions.swift */; };
 		540F9A36217CA92D00C483AA /* addPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A35217CA92D00C483AA /* addPreferencesViewController.swift */; };
+		540F9A3A217F6DEF00C483AA /* userSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A39217F6DEF00C483AA /* userSchema.swift */; };
+		54FCFCE7217F7B910070AA03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54FCFCE6217F7B910070AA03 /* GoogleService-Info.plist */; };
+		54FCFCEA217F7EEB0070AA03 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FCFCE9217F7EEB0070AA03 /* Firebase.swift */; };
+		6D73077FC768A6A90531BCD6 /* Pods_TokyoClothesExchange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C9D0FDD03040BDF79AE5 /* Pods_TokyoClothesExchange.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C4D5BBB02BC3293510B5B98 /* Pods-TokyoClothesExchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokyoClothesExchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-TokyoClothesExchange/Pods-TokyoClothesExchange.release.xcconfig"; sourceTree = "<group>"; };
+		50B1C9D0FDD03040BDF79AE5 /* Pods_TokyoClothesExchange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TokyoClothesExchange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		540F9A04217C404200C483AA /* TokyoClothesExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokyoClothesExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		540F9A07217C404200C483AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		540F9A09217C404200C483AA /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +53,13 @@
 		540F9A30217C5F2700C483AA /* delegateMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delegateMethods.swift; sourceTree = "<group>"; };
 		540F9A33217C7F2000C483AA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		540F9A35217CA92D00C483AA /* addPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addPreferencesViewController.swift; sourceTree = "<group>"; };
+		540F9A39217F6DEF00C483AA /* userSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userSchema.swift; sourceTree = "<group>"; };
+		54FCFCE6217F7B910070AA03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		54FCFCE9217F7EEB0070AA03 /* Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		8854FBA0436170849A83D945 /* Pods_TokyoClothesExchangeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TokyoClothesExchangeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40544CAAEEE14D2279B0E04 /* Pods-TokyoClothesExchangeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokyoClothesExchangeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TokyoClothesExchangeUITests/Pods-TokyoClothesExchangeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C529405B17B08AB999646B8B /* Pods-TokyoClothesExchangeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokyoClothesExchangeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TokyoClothesExchangeUITests/Pods-TokyoClothesExchangeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D44BD4535CE168D62D55EA05 /* Pods-TokyoClothesExchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokyoClothesExchange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TokyoClothesExchange/Pods-TokyoClothesExchange.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D73077FC768A6A90531BCD6 /* Pods_TokyoClothesExchange.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481DB9551064F74156B692A0 /* Pods_TokyoClothesExchangeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +88,8 @@
 				540F9A06217C404200C483AA /* TokyoClothesExchange */,
 				540F9A1E217C404300C483AA /* TokyoClothesExchangeUITests */,
 				540F9A05217C404200C483AA /* Products */,
+				659237805AC2E846010EE9E5 /* Pods */,
+				7C4C8A861D00919E321CD40D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,15 +105,18 @@
 		540F9A06217C404200C483AA /* TokyoClothesExchange */ = {
 			isa = PBXGroup;
 			children = (
+				54FCFCE8217F7ED10070AA03 /* Firebase */,
 				540F9A2B217C45BA00C483AA /* LoginAndRegistration */,
 				540F9A07217C404200C483AA /* AppDelegate.swift */,
 				540F9A30217C5F2700C483AA /* delegateMethods.swift */,
+				540F9A33217C7F2000C483AA /* Extensions.swift */,
+				540F9A38217F6DDA00C483AA /* Models */,
 				540F9A0B217C404200C483AA /* Main.storyboard */,
 				540F9A11217C404200C483AA /* Assets.xcassets */,
 				540F9A13217C404200C483AA /* LaunchScreen.storyboard */,
 				540F9A16217C404200C483AA /* Info.plist */,
+				54FCFCE6217F7B910070AA03 /* GoogleService-Info.plist */,
 				540F9A0E217C404200C483AA /* TokyoClothesExchange.xcdatamodeld */,
-				540F9A33217C7F2000C483AA /* Extensions.swift */,
 			);
 			path = TokyoClothesExchange;
 			sourceTree = "<group>";
@@ -119,6 +140,42 @@
 			name = LoginAndRegistration;
 			sourceTree = "<group>";
 		};
+		540F9A38217F6DDA00C483AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				540F9A39217F6DEF00C483AA /* userSchema.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		54FCFCE8217F7ED10070AA03 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				54FCFCE9217F7EEB0070AA03 /* Firebase.swift */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		659237805AC2E846010EE9E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D44BD4535CE168D62D55EA05 /* Pods-TokyoClothesExchange.debug.xcconfig */,
+				4C4D5BBB02BC3293510B5B98 /* Pods-TokyoClothesExchange.release.xcconfig */,
+				B40544CAAEEE14D2279B0E04 /* Pods-TokyoClothesExchangeUITests.debug.xcconfig */,
+				C529405B17B08AB999646B8B /* Pods-TokyoClothesExchangeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C4C8A861D00919E321CD40D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50B1C9D0FDD03040BDF79AE5 /* Pods_TokyoClothesExchange.framework */,
+				8854FBA0436170849A83D945 /* Pods_TokyoClothesExchangeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 540F9A24217C404300C483AA /* Build configuration list for PBXNativeTarget "TokyoClothesExchange" */;
 			buildPhases = (
+				9F42E04AA01359D35A7168EF /* [CP] Check Pods Manifest.lock */,
 				540F9A00217C404200C483AA /* Sources */,
 				540F9A01217C404200C483AA /* Frameworks */,
 				540F9A02217C404200C483AA /* Resources */,
+				7A3818514310D98003DE6E74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 540F9A27217C404300C483AA /* Build configuration list for PBXNativeTarget "TokyoClothesExchangeUITests" */;
 			buildPhases = (
+				738747AC1EBE450712D2269D /* [CP] Check Pods Manifest.lock */,
 				540F9A17217C404300C483AA /* Sources */,
 				540F9A18217C404300C483AA /* Frameworks */,
 				540F9A19217C404300C483AA /* Resources */,
@@ -203,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				540F9A15217C404200C483AA /* LaunchScreen.storyboard in Resources */,
+				54FCFCE7217F7B910070AA03 /* GoogleService-Info.plist in Resources */,
 				540F9A12217C404200C483AA /* Assets.xcassets in Resources */,
 				540F9A0D217C404200C483AA /* Main.storyboard in Resources */,
 			);
@@ -217,6 +278,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		738747AC1EBE450712D2269D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TokyoClothesExchangeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A3818514310D98003DE6E74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TokyoClothesExchange/Pods-TokyoClothesExchange-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TokyoClothesExchange/Pods-TokyoClothesExchange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F42E04AA01359D35A7168EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TokyoClothesExchange-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		540F9A00217C404200C483AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -225,8 +349,10 @@
 				540F9A36217CA92D00C483AA /* addPreferencesViewController.swift in Sources */,
 				540F9A10217C404200C483AA /* TokyoClothesExchange.xcdatamodeld in Sources */,
 				540F9A34217C7F2000C483AA /* Extensions.swift in Sources */,
+				540F9A3A217F6DEF00C483AA /* userSchema.swift in Sources */,
 				540F9A2F217C4F4E00C483AA /* formTableViewCell.swift in Sources */,
 				540F9A0A217C404200C483AA /* LoginRegisterViewController.swift in Sources */,
+				54FCFCEA217F7EEB0070AA03 /* Firebase.swift in Sources */,
 				540F9A31217C5F2700C483AA /* delegateMethods.swift in Sources */,
 				540F9A08217C404200C483AA /* AppDelegate.swift in Sources */,
 			);
@@ -367,6 +493,7 @@
 		};
 		540F9A25217C404300C483AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D44BD4535CE168D62D55EA05 /* Pods-TokyoClothesExchange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3ZCB692HH2;
@@ -380,6 +507,7 @@
 		};
 		540F9A26217C404300C483AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C4D5BBB02BC3293510B5B98 /* Pods-TokyoClothesExchange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3ZCB692HH2;
@@ -393,6 +521,7 @@
 		};
 		540F9A28217C404300C483AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B40544CAAEEE14D2279B0E04 /* Pods-TokyoClothesExchangeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TokyoClothesExchangeUITests/Info.plist;
@@ -406,6 +535,7 @@
 		};
 		540F9A29217C404300C483AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C529405B17B08AB999646B8B /* Pods-TokyoClothesExchangeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TokyoClothesExchangeUITests/Info.plist;
@@ -436,6 +566,7 @@
 				540F9A26217C404300C483AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		540F9A27217C404300C483AA /* Build configuration list for PBXNativeTarget "TokyoClothesExchangeUITests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +575,7 @@
 				540F9A29217C404300C483AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

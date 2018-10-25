@@ -22,3 +22,19 @@ extension UIViewController {
         }
     }
 }
+
+extension Date {
+    func convertDateToString() -> String{
+        let dateFormatter : DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return dateFormatter.string(from: self)
+    }
+}
+
+extension String {
+    func convertStringToDate() -> Date? {
+        let dateFormatter : DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return dateFormatter.date(from: self)
+    }
+}
