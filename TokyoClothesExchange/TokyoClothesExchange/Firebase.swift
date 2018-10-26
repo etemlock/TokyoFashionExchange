@@ -8,7 +8,7 @@
 
 import Foundation
 import Firebase
-
+import FirebaseStorage
 
 class fireBase {
     private var ref : DatabaseReference?
@@ -18,15 +18,14 @@ class fireBase {
         ref.child("heroes").updateChildValues(["testValue2":1234])
     }
     
-    func saveUserBlobToFireBase(url: String, userToPost: userModel) -> Bool {
+    func saveUserBlobToFireBase(url: String, userToPost: userModel, completion: @escaping (_ didSucceed: Bool) -> Void)  {
         ref = Database.database().reference(fromURL: url)
         let date = Date()
-        var success : Bool = false
         Auth.auth().createUser(withEmail: userToPost.email, password: userToPost.password, completion: {(AuthResultCallback) in
             //check for error
             if let error = AuthResultCallback.1 {
                 print("\(error)")
-                return
+                completion(false)
             }
             //else check for user
             if let user = AuthResultCallback.0 {
@@ -36,7 +35,6 @@ class fireBase {
                     "age":userToPost.age,
                     "favoriteBrands": userToPost.favoriteBrand,
                     "favoriteColors" : [String](),
-                    "userID" : "",
                     "size": userToPost.size,
                     "sex": userToPost.sex,
                     "name" : userToPost.name,
@@ -44,19 +42,45 @@ class fireBase {
                     "createDate": date.convertDateToString(),
                     "updateDate": ""
                 ]
-                self.ref?.child("testUser").child(uid).updateChildValues(post, withCompletionBlock:{ (err,ref)  in
+                self.ref?.child("users").child(uid).updateChildValues(post, withCompletionBlock:{ (err,ref)  in
                     if err != nil {
                         print("\(err)")
-                        return
+                        completion(false)
                     }
                     print("sucessfully inserter user with the params \(post)")
-                    success = true
+                    completion(true)
                 })
                 
             }
         })
-        return success
+        return
     }
     
+    func uploadImagesToStorage(images: [UIImage?], localURLs: [URL?]){
+        let storageRef = Storage.storage().reference()
+        for image in images {
+            if image != nil {
+                uploadSingleImageToStorage(storageRef: storageRef, image: image!, completion: {(metaData) in
+                    print("\(metaData)")
+                })
+            }
+        }
+        
+    }
+    
+    func uploadSingleImageToStorage(storageRef: StorageReference, image: UIImage, completion: @escaping (_ metaData : StorageMetadata?) -> Void ){
+        let toPutRef = storageRef.child("Images/Image1.jpg")
+        if let uploadData = UIImagePNGRepresentation(image){
+            toPutRef.putData(uploadData, metadata: nil, completion: { (metaData, error) in
+                if error != nil {
+                    print("\(error)")
+                    completion(nil)
+                }
+                
+                completion(metaData)
+            })
+        }
+        
+    }
     
 }

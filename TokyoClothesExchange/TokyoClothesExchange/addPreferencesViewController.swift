@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import Firebase
+
 
 class addPreferencesViewController: UIViewController, UITextViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -16,11 +16,12 @@ class addPreferencesViewController: UIViewController, UITextViewDelegate, UIPick
     
     @IBOutlet var sizePickerView: UIPickerView!
     
+    private var segueId = "toUploadPicSegue"
     /****** data ******/
     private var sizePickerData = ["S (３０〜４５cm)","M　(４５〜６０cm）","L（６０〜８０cm）"]
     var sizes = ["S","M","L"]
     var selectSize = "M"
-    let userURL = "https://tokyofashionexchange-item.firebaseio.com/"
+    let userURL = "https://tokyofashionexchange.firebaseio.com/"
     private var userToRegister = userModel()
     
     
@@ -37,6 +38,7 @@ class addPreferencesViewController: UIViewController, UITextViewDelegate, UIPick
         prefTextView.layer.borderColor = UIColor.darkGray.cgColor
         sizePickerView.delegate = self
         sizePickerView.dataSource = self
+        self.hideKeyBoardWhenTappedAround()
     }
     
     override func didReceiveMemoryWarning() {
@@ -73,9 +75,14 @@ class addPreferencesViewController: UIViewController, UITextViewDelegate, UIPick
         setUserAttributesFromPrevParams()
         userToRegister.size = selectSize
         userToRegister.favoriteBrand = getBrandList()
-        //fireBase().firstFireBaseFunc(url: "https://tokyofashionexchange.firebaseio.com/")
-        let wasSuccess = fireBase().saveUserBlobToFireBase(url: userURL, userToPost: userToRegister)
-        print("\(wasSuccess)")
+        self.performSegue(withIdentifier: self.segueId, sender: self)
+        fireBase().saveUserBlobToFireBase(url: userURL, userToPost: userToRegister, completion: {(didSucceed) in
+            if(didSucceed){
+                self.performSegue(withIdentifier: self.segueId, sender: self)
+            } else {
+                self.promptAlertWithDelay("", inmessage: "登録が失敗しました", indelay: 5.0)
+            }
+        })
     }
     
     func setUserAttributesFromPrevParams() {

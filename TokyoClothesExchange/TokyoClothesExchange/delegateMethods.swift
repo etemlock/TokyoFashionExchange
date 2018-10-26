@@ -7,8 +7,13 @@
 //
 
 import Foundation
+import UIKit
 
 protocol userInputFieldDelegate {
     func userInputFieldDidChange(userInputField: userInputField)
+}
+
+protocol imageCellButtonDelegate {
+    func imageCellButtonWasPressed(quadrant: Int)
 }
 

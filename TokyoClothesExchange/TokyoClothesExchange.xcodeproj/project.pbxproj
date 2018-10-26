@@ -22,6 +22,8 @@
 		540F9A3A217F6DEF00C483AA /* userSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A39217F6DEF00C483AA /* userSchema.swift */; };
 		54FCFCE7217F7B910070AA03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54FCFCE6217F7B910070AA03 /* GoogleService-Info.plist */; };
 		54FCFCEA217F7EEB0070AA03 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FCFCE9217F7EEB0070AA03 /* Firebase.swift */; };
+		54FCFCED218225270070AA03 /* uploadImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FCFCEC218225270070AA03 /* uploadImagesViewController.swift */; };
+		54FCFCF02182312F0070AA03 /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FCFCEF2182312F0070AA03 /* imageCollectionViewCell.swift */; };
 		6D73077FC768A6A90531BCD6 /* Pods_TokyoClothesExchange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B1C9D0FDD03040BDF79AE5 /* Pods_TokyoClothesExchange.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		540F9A39217F6DEF00C483AA /* userSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userSchema.swift; sourceTree = "<group>"; };
 		54FCFCE6217F7B910070AA03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54FCFCE9217F7EEB0070AA03 /* Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		54FCFCEC218225270070AA03 /* uploadImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = uploadImagesViewController.swift; sourceTree = "<group>"; };
+		54FCFCEF2182312F0070AA03 /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageCollectionViewCell.swift; sourceTree = "<group>"; };
 		8854FBA0436170849A83D945 /* Pods_TokyoClothesExchangeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TokyoClothesExchangeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40544CAAEEE14D2279B0E04 /* Pods-TokyoClothesExchangeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokyoClothesExchangeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TokyoClothesExchangeUITests/Pods-TokyoClothesExchangeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C529405B17B08AB999646B8B /* Pods-TokyoClothesExchangeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TokyoClothesExchangeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TokyoClothesExchangeUITests/Pods-TokyoClothesExchangeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		540F9A06217C404200C483AA /* TokyoClothesExchange */ = {
 			isa = PBXGroup;
 			children = (
+				54FCFCEE21822FC50070AA03 /* uploadImages */,
 				54FCFCE8217F7ED10070AA03 /* Firebase */,
 				540F9A2B217C45BA00C483AA /* LoginAndRegistration */,
 				540F9A07217C404200C483AA /* AppDelegate.swift */,
@@ -154,6 +159,15 @@
 				54FCFCE9217F7EEB0070AA03 /* Firebase.swift */,
 			);
 			name = Firebase;
+			sourceTree = "<group>";
+		};
+		54FCFCEE21822FC50070AA03 /* uploadImages */ = {
+			isa = PBXGroup;
+			children = (
+				54FCFCEC218225270070AA03 /* uploadImagesViewController.swift */,
+				54FCFCEF2182312F0070AA03 /* imageCollectionViewCell.swift */,
+			);
+			name = uploadImages;
 			sourceTree = "<group>";
 		};
 		659237805AC2E846010EE9E5 /* Pods */ = {
@@ -348,6 +362,8 @@
 			files = (
 				540F9A36217CA92D00C483AA /* addPreferencesViewController.swift in Sources */,
 				540F9A10217C404200C483AA /* TokyoClothesExchange.xcdatamodeld in Sources */,
+				54FCFCED218225270070AA03 /* uploadImagesViewController.swift in Sources */,
+				54FCFCF02182312F0070AA03 /* imageCollectionViewCell.swift in Sources */,
 				540F9A34217C7F2000C483AA /* Extensions.swift in Sources */,
 				540F9A3A217F6DEF00C483AA /* userSchema.swift in Sources */,
 				540F9A2F217C4F4E00C483AA /* formTableViewCell.swift in Sources */,

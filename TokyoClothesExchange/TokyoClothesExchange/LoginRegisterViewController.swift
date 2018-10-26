@@ -40,9 +40,9 @@ class LoginRegisterViewController: UIViewController, UITableViewDelegate, UITabl
         formTableView.delegate = self
         formTableView.dataSource = self
         logoImage.image = UIImage(named: "Jacket")
-        //setUpLoginButtonConstraints()
         registerButton.isHidden = true
         genderSegment.isHidden = true
+        self.hideKeyBoardWhenTappedAround()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

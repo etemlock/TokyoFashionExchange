@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import UserNotifications
 
 
 extension UIViewController {
@@ -20,6 +21,27 @@ extension UIViewController {
         DispatchQueue.main.asyncAfter(deadline: time){
             alert.dismiss(animated: true, completion: nil)
         }
+    }
+    
+    func promptDummyNotification(){
+        let content = UNMutableNotificationContent()
+        content.title = "You have recommendations"
+        content.body = "You have 10 recommendations"
+        content.badge = 1
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
+    
+    func hideKeyBoardWhenTappedAround(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboad))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboad(){
+        view.endEditing(true)
     }
 }
 
