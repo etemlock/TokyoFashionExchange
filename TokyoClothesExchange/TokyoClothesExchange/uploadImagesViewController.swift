@@ -77,7 +77,7 @@ class uploadImagesViewController: UIViewController, UINavigationControllerDelega
             print("couldn't load image for quadrant \(quadrantToSetImg)")
         }
         if let chosenURL = info[UIImagePickerControllerReferenceURL] as? NSURL {
-            imageURLArray[quadrantToSetImg] = chosenURL as? URL
+            imageURLArray[quadrantToSetImg] = chosenURL as URL
         } else {
             print("could get image url for quadrant \(quadrantToSetImg)")
         }
@@ -98,6 +98,9 @@ class uploadImagesViewController: UIViewController, UINavigationControllerDelega
     }
     
     @IBAction func uploadPhotosToStorage(_ sender: Any) {
-        fireBase().uploadImagesToStorage(images: imageArray, localURLs: imageURLArray)
+        DispatchQueue.global(qos: .background).async {
+            fireBase().uploadImagesToStorage(images: self.imageArray, localURLs: self.imageURLArray)
+        }
+        
     }
 }

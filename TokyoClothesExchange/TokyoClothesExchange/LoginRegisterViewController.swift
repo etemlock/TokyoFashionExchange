@@ -42,6 +42,7 @@ class LoginRegisterViewController: UIViewController, UITableViewDelegate, UITabl
         logoImage.image = UIImage(named: "Jacket")
         registerButton.isHidden = true
         genderSegment.isHidden = true
+        promptDummyNotification()
         self.hideKeyBoardWhenTappedAround()
         // Do any additional setup after loading the view, typically from a nib.
     }

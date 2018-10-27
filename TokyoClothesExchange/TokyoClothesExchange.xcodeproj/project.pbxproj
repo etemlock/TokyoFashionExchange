@@ -20,6 +20,7 @@
 		540F9A34217C7F2000C483AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A33217C7F2000C483AA /* Extensions.swift */; };
 		540F9A36217CA92D00C483AA /* addPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A35217CA92D00C483AA /* addPreferencesViewController.swift */; };
 		540F9A3A217F6DEF00C483AA /* userSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F9A39217F6DEF00C483AA /* userSchema.swift */; };
+		54F8C7B8218392FA006A6DE1 /* itemSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F8C7B7218392FA006A6DE1 /* itemSchema.swift */; };
 		54FCFCE7217F7B910070AA03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54FCFCE6217F7B910070AA03 /* GoogleService-Info.plist */; };
 		54FCFCEA217F7EEB0070AA03 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FCFCE9217F7EEB0070AA03 /* Firebase.swift */; };
 		54FCFCED218225270070AA03 /* uploadImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FCFCEC218225270070AA03 /* uploadImagesViewController.swift */; };
@@ -56,6 +57,7 @@
 		540F9A33217C7F2000C483AA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		540F9A35217CA92D00C483AA /* addPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addPreferencesViewController.swift; sourceTree = "<group>"; };
 		540F9A39217F6DEF00C483AA /* userSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userSchema.swift; sourceTree = "<group>"; };
+		54F8C7B7218392FA006A6DE1 /* itemSchema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemSchema.swift; sourceTree = "<group>"; };
 		54FCFCE6217F7B910070AA03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54FCFCE9217F7EEB0070AA03 /* Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		54FCFCEC218225270070AA03 /* uploadImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = uploadImagesViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				540F9A39217F6DEF00C483AA /* userSchema.swift */,
+				54F8C7B7218392FA006A6DE1 /* itemSchema.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				540F9A34217C7F2000C483AA /* Extensions.swift in Sources */,
 				540F9A3A217F6DEF00C483AA /* userSchema.swift in Sources */,
 				540F9A2F217C4F4E00C483AA /* formTableViewCell.swift in Sources */,
+				54F8C7B8218392FA006A6DE1 /* itemSchema.swift in Sources */,
 				540F9A0A217C404200C483AA /* LoginRegisterViewController.swift in Sources */,
 				54FCFCEA217F7EEB0070AA03 /* Firebase.swift in Sources */,
 				540F9A31217C5F2700C483AA /* delegateMethods.swift in Sources */,
