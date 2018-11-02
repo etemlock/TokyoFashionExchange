@@ -1,0 +1,13 @@
+##　GCP Info
+1. GCS
+bucket name ： fashion-item-images
+
+2. Cloud Function
+
+3. GCE
+
+4. Bigtable
+
+5. Firebase
+
+6. 
